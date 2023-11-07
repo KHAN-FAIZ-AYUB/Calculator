@@ -14,28 +14,45 @@
     <title>Basis Calculator</title>
   </head>
   <body>
-    <input type="text" id="first-value" class="valuebox" />
-    <input type="text" id="second-value" class="valuebox" />
-    <br />
-    <br />
-    <button id="add" class="operation">Add</button>
-    <br />
-    <br />
-    <button id="sub" class="operation">Sub</button>
-    <br />
-    <br />
-    <button id="multi" class="operation">Multi</button>
-    <br />
-    <br />
-    <button id="div" class="operation">Div</button>
-    <br />
-    <br />
-    <button id="reset">Reset</button>
-    <br />
-    <br />
-    <!-- <span>=</span> -->
-    <input type="text" id="result" />
-    <!-- <button id="subimt">calculate</button> -->
+    <div class="container">
+      <div class="input-container">
+        <input
+          type="text"
+          placeholder="enter first value"
+          id="first-value"
+          class="valuebox"
+        />
+        <input
+          type="text"
+          placeholder="enter second value"
+          id="second-value"
+          class="valuebox"
+        />
+        <br />
+      </div>
+      <div class="button-container">
+        <br />
+        <button id="add" class="operation btn">Add</button>
+        <br />
+        <br />
+        <button id="sub" class="operation btn">Sub</button>
+        <br />
+        <br />
+        <button id="multi" class="operation btn">Multi</button>
+        <br />
+        <br />
+        <button id="div" class="operation btn">Div</button>
+        <br />
+        <br />
+        <button id="reset btn">Reset</button>
+        <br />
+      </div>
+      <div class="result-container">
+        <br />
+        <!-- <span>=</span> -->
+        <input type="text" id="result" />
+      </div>
+    </div>
     <script src="script.js" defer></script>
   </body>
 </html>
