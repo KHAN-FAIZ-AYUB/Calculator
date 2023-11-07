@@ -4,7 +4,6 @@ const btnAdd = document.querySelector("#add");
 const validation = function () {
   const val1 = document.getElementById("first-value").value;
   const val2 = document.getElementById("second-value").value;
-  //   console.log(isNaN(val1), isNaN(val2));
   if (isNaN(val1) || isNaN(val2)) {
     alert("Pleas Enter Number");
     return false;
@@ -13,9 +12,7 @@ const validation = function () {
 };
 
 const sum = function () {
-  if (validation()) {
-    const val1 = parseFloat(document.getElementById("first-value").value);
-    const val2 = parseFloat(document.getElementById("second-value").value);
+  if (validation(val1, val2)) {
     const total = val1 + val2;
     document.getElementById("add").value = total;
     document.getElementById("result").value = total;
@@ -35,9 +32,7 @@ document.getElementById("reset").onclick = function () {
 //  ------------------------Sub--------------------------------------------
 
 const sub = function () {
-  if (validation()) {
-    const val1 = Number(document.getElementById("first-value").value);
-    const val2 = Number(document.getElementById("second-value").value);
+  if (validation(val1, val2)) {
     const total = val1 - val2;
     document.getElementById("sub").value = total;
     document.getElementById("result").value = total;
@@ -50,9 +45,7 @@ btnSub.addEventListener("click", sub);
 //  ------------------------Multi--------------------------------------------
 
 const multi = function () {
-  if (validation()) {
-    const val1 = Number(document.getElementById("first-value").value);
-    const val2 = Number(document.getElementById("second-value").value);
+  if (validation(val1, val2)) {
     const total = val1 * val2;
     document.getElementById("multi").value = total;
     document.getElementById("result").value = total;
@@ -65,9 +58,7 @@ btnMulti.addEventListener("click", multi);
 //  ------------------------Div--------------------------------------------
 
 const div = function () {
-  if (validation()) {
-    const val1 = Number(document.getElementById("first-value").value);
-    const val2 = Number(document.getElementById("second-value").value);
+  if (validation(val1, val2)) {
     const total = val1 / val2;
     document.getElementById("div").value = total;
     document.getElementById("result").value = total;
