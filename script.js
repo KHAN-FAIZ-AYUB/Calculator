@@ -1,5 +1,8 @@
 const valueBox = document.querySelectorAll(".valuebox");
 const btnAdd = document.querySelector("#add");
+const btnSub = document.querySelector("#sub");
+const btnMulti = document.querySelector("#multi");
+const btnDiv = document.querySelector("#div");
 
 const validation = function () {
   const val1 = document.getElementById("first-value").value;
@@ -27,16 +30,7 @@ const sum = function () {
         "";
   }, 5000);
 };
-btnAdd.addEventListener("click", sum);
 
-// ---------------------------RESET----------------------------------
-
-document.getElementById("reset btn").onclick = function () {
-  document.getElementById("first-value").value =
-    document.getElementById("second-value").value =
-    document.getElementById("result").value =
-      "";
-};
 //  ------------------------Sub--------------------------------------------
 
 const sub = function () {
@@ -56,8 +50,6 @@ const sub = function () {
         "";
   }, 5000);
 };
-const btnSub = document.querySelector("#sub");
-btnSub.addEventListener("click", sub);
 
 //  ------------------------Multi--------------------------------------------
 
@@ -78,8 +70,6 @@ const multi = function () {
         "";
   }, 5000);
 };
-const btnMulti = document.querySelector("#multi");
-btnMulti.addEventListener("click", multi);
 
 //  ------------------------Div--------------------------------------------
 
@@ -100,7 +90,19 @@ const div = function () {
         "";
   }, 5000);
 };
-const btnDiv = document.querySelector("#div");
+
+// ---------------------------RESET----------------------------------
+
+document.getElementById("reset btn").onclick = function () {
+  document.getElementById("first-value").value =
+    document.getElementById("second-value").value =
+    document.getElementById("result").value =
+      "";
+};
+
+btnAdd.addEventListener("click", sum);
+btnSub.addEventListener("click", sub);
+btnMulti.addEventListener("click", multi);
 btnDiv.addEventListener("click", div);
 
 /*
