@@ -20,6 +20,12 @@ const sum = function () {
     document.getElementById("result").value = total;
     console.log(val1, val2, total);
   }
+  setTimeout(() => {
+    document.getElementById("first-value").value =
+      document.getElementById("second-value").value =
+      result.value =
+        "";
+  }, 5000);
 };
 btnAdd.addEventListener("click", sum);
 
@@ -43,6 +49,12 @@ const sub = function () {
     document.getElementById("result").value = total;
     console.log(val1, val2, total);
   }
+  setTimeout(() => {
+    document.getElementById("first-value").value =
+      document.getElementById("second-value").value =
+      result.value =
+        "";
+  }, 5000);
 };
 const btnSub = document.querySelector("#sub");
 btnSub.addEventListener("click", sub);
@@ -59,6 +71,12 @@ const multi = function () {
     document.getElementById("result").value = total;
     console.log(val1, val2, total);
   }
+  setTimeout(() => {
+    document.getElementById("first-value").value =
+      document.getElementById("second-value").value =
+      result.value =
+        "";
+  }, 5000);
 };
 const btnMulti = document.querySelector("#multi");
 btnMulti.addEventListener("click", multi);
@@ -75,6 +93,12 @@ const div = function () {
     document.getElementById("result").value = total;
     console.log(val1, val2, total);
   }
+  setTimeout(() => {
+    document.getElementById("first-value").value =
+      document.getElementById("second-value").value =
+      result.value =
+        "";
+  }, 5000);
 };
 const btnDiv = document.querySelector("#div");
 btnDiv.addEventListener("click", div);

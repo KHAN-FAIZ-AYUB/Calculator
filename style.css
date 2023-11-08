@@ -14,9 +14,9 @@
 .input-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
-  width: 50%;
+  width: 350px;
 }
 
 .button-container {
